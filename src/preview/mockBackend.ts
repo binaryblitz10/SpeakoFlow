@@ -523,6 +523,7 @@ const settings: Json = {
     paste_last_transcript: binding("paste_last_transcript", ""),
   },
   push_to_talk: true,
+  dynamic_shortcuts: false,
   audio_feedback: false,
   theme: params.get("theme") ?? "light",
   stt_engine_mode: params.get("stt") === "device" ? "local" : "cloud",
@@ -1751,6 +1752,7 @@ const handlers: Record<string, (args: Json) => unknown> = {
           "assistant_active_character_id",
         ],
         ["change_ptt_setting", "enabled", "push_to_talk"],
+        ["change_dynamic_shortcuts_setting", "enabled", "dynamic_shortcuts"],
       ] as const
     ).map(([command, arg, key]) => [
       command,
