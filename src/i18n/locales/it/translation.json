@@ -628,6 +628,10 @@
             "name": "Annulla",
             "description": "Ferma la registrazione in corso o una risposta in arrivo."
           },
+          "paste_last_transcript": {
+            "name": "Incolla l'ultima trascrizione",
+            "description": "Incolla di nuovo la tua ultima dettatura dove si trova il cursore."
+          },
           "transcribe_with_post_process": {
             "name": "Detta e ripulisci",
             "description": "Detta, poi ripulisci il testo con l'IA prima che venga scritto."
@@ -664,9 +668,10 @@
       },
       "pushToTalk": {
         "label": "Modalità di registrazione",
-        "description": "Tieni premuto: registri finché tieni premuta una scorciatoia di registrazione. Tocca: una pressione avvia, la successiva ferma. Vale per tutte le scorciatoie di registrazione.",
+        "description": "Tieni premuto: registri finché tieni premuta una scorciatoia di registrazione. Tocca: una pressione avvia, la successiva ferma. Tieni premuto o tocca: tieni premuto per parlare, oppure tocca una volta e la registrazione continua finché non tocchi di nuovo. Vale per tutte le scorciatoie di registrazione.",
         "hold": "Tieni premuto",
-        "tap": "Tocca"
+        "tap": "Tocca",
+        "auto": "Tieni premuto o tocca"
       }
     },
     "models": {
@@ -2581,7 +2586,8 @@
         "hold": "Tieni premuto, parla, rilascia. Le tue parole vengono scritte dove si trova il cursore.",
         "tap": "Tocca per iniziare, parla, tocca per fermare. Le tue parole vengono scritte dove si trova il cursore.",
         "whatHold": "Tieni premuto, parla, rilascia. Le parole compaiono dove si trova il cursore.",
-        "whatTap": "Tocca, parla, tocca di nuovo. Le parole compaiono dove si trova il cursore."
+        "whatTap": "Tocca, parla, tocca di nuovo. Le parole compaiono dove si trova il cursore.",
+        "whatAuto": "Tieni premuto, parla, rilascia. Oppure tocca una volta, parla e tocca di nuovo per fermare. Le parole compaiono dove si trova il cursore."
       },
       "cleanup": {
         "title": "Detta e ripulisci",
@@ -2602,11 +2608,16 @@
       "offHint": "Disattivata",
       "mode": {
         "hold": "Tieni premuto per parlare",
-        "tap": "Tocca per avviare e fermare"
+        "tap": "Tocca per avviare e fermare",
+        "auto": "Tieni premuto o tocca"
       },
       "cancel": {
         "title": "Annulla",
         "what": "Ferma una registrazione o una risposta letta ad alta voce."
+      },
+      "pasteLast": {
+        "title": "Incolla l'ultima trascrizione",
+        "what": "Incolla di nuovo la tua ultima dettatura dove si trova il cursore."
       },
       "globe": {
         "hint": "Anche macOS usa il tasto 🌐. Imposta «Premi il tasto 🌐 per» su «Non fare nulla» perché serva solo a dettare.",

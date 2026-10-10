@@ -624,6 +624,10 @@
             "name": "Hủy",
             "description": "Dừng bản ghi hiện tại hoặc câu trả lời đang phát."
           },
+          "paste_last_transcript": {
+            "name": "Dán bản chép lời gần nhất",
+            "description": "Dán lại đoạn đọc chính tả gần nhất của bạn tại vị trí con trỏ."
+          },
           "transcribe_with_post_process": {
             "name": "Đọc chính tả và dọn dẹp",
             "description": "Đọc chính tả, rồi AI dọn dẹp văn bản trước khi nó được gõ ra."
@@ -660,9 +664,10 @@
       },
       "pushToTalk": {
         "label": "Cách ghi âm",
-        "description": "Giữ: ghi âm trong khi bạn giữ phím tắt ghi âm. Nhấn: nhấn một lần để bắt đầu, nhấn lần nữa để dừng. Áp dụng cho mọi phím tắt ghi âm.",
+        "description": "Giữ: ghi âm trong khi bạn giữ phím tắt ghi âm. Nhấn: nhấn một lần để bắt đầu, nhấn lần nữa để dừng. Giữ hoặc nhấn: giữ để nói, hoặc nhấn một lần và ghi âm tiếp tục cho đến khi bạn nhấn lần nữa. Áp dụng cho mọi phím tắt ghi âm.",
         "hold": "Giữ",
-        "tap": "Nhấn"
+        "tap": "Nhấn",
+        "auto": "Giữ hoặc nhấn"
       }
     },
     "models": {
@@ -2539,7 +2544,8 @@
         "hold": "Giữ, nói, thả ra. Lời bạn nói được gõ tại vị trí con trỏ.",
         "tap": "Nhấn để bắt đầu, nói, nhấn để dừng. Lời bạn nói được gõ tại vị trí con trỏ.",
         "whatHold": "Giữ, nói, thả ra. Lời bạn nói được gõ tại vị trí con trỏ.",
-        "whatTap": "Nhấn, nói, nhấn lại. Lời bạn nói được gõ tại vị trí con trỏ."
+        "whatTap": "Nhấn, nói, nhấn lại. Lời bạn nói được gõ tại vị trí con trỏ.",
+        "whatAuto": "Giữ, nói, thả ra. Hoặc nhấn một lần, nói rồi nhấn lần nữa để dừng. Lời bạn nói được gõ tại vị trí con trỏ."
       },
       "cleanup": {
         "title": "Đọc chính tả và dọn dẹp",
@@ -2560,11 +2566,16 @@
       "offHint": "Đã tắt",
       "mode": {
         "hold": "Giữ để nói",
-        "tap": "Nhấn để bật/tắt"
+        "tap": "Nhấn để bật/tắt",
+        "auto": "Giữ hoặc nhấn"
       },
       "cancel": {
         "title": "Hủy",
         "what": "Dừng ghi âm, hoặc dừng câu trả lời đang được đọc to."
+      },
+      "pasteLast": {
+        "title": "Dán bản chép lời gần nhất",
+        "what": "Dán lại đoạn đọc chính tả gần nhất của bạn tại vị trí con trỏ."
       },
       "globe": {
         "hint": "macOS cũng phản hồi phím 🌐. Đặt “Nhấn phím 🌐 để” thành “Không làm gì” để phím chỉ dùng cho đọc chính tả.",

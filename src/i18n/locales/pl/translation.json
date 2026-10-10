@@ -630,6 +630,10 @@
             "name": "Anulowanie",
             "description": "Zatrzymuje bieżące nagrywanie lub generowaną odpowiedź."
           },
+          "paste_last_transcript": {
+            "name": "Wklej ostatnią transkrypcję",
+            "description": "Wkleja ponownie ostatni podyktowany tekst tam, gdzie jest kursor."
+          },
           "transcribe_with_post_process": {
             "name": "Dyktuj i uporządkuj",
             "description": "Dyktuj, a AI oczyści tekst przed jego wpisaniem."
@@ -666,9 +670,10 @@
       },
       "pushToTalk": {
         "label": "Sposób nagrywania",
-        "description": "Przytrzymanie: nagrywanie trwa, dopóki trzymasz skrót nagrywania. Naciśnięcie: jedno naciśnięcie zaczyna, następne kończy. Dotyczy wszystkich skrótów nagrywania.",
+        "description": "Przytrzymanie: nagrywanie trwa, dopóki trzymasz skrót nagrywania. Naciśnięcie: jedno naciśnięcie zaczyna, następne kończy. Przytrzymanie lub naciśnięcie: przytrzymaj, aby mówić, albo naciśnij raz, a nagrywanie trwa, dopóki nie naciśniesz ponownie. Dotyczy wszystkich skrótów nagrywania.",
         "hold": "Przytrzymanie",
-        "tap": "Naciśnięcie"
+        "tap": "Naciśnięcie",
+        "auto": "Przytrzymanie lub naciśnięcie"
       }
     },
     "models": {
@@ -2602,7 +2607,8 @@
         "hold": "Przytrzymaj, mów, puść. Twoje słowa pojawią się tam, gdzie jest kursor.",
         "tap": "Stuknij, aby zacząć, mów, stuknij, aby zakończyć. Twoje słowa pojawią się tam, gdzie jest kursor.",
         "whatHold": "Przytrzymaj, mów, puść. Słowa wpiszą się tam, gdzie jest kursor.",
-        "whatTap": "Stuknij, mów, stuknij ponownie. Słowa wpiszą się tam, gdzie jest kursor."
+        "whatTap": "Stuknij, mów, stuknij ponownie. Słowa wpiszą się tam, gdzie jest kursor.",
+        "whatAuto": "Przytrzymaj, mów, puść. Albo naciśnij raz, mów i naciśnij ponownie, aby zatrzymać. Słowa wpiszą się tam, gdzie jest kursor."
       },
       "cleanup": {
         "title": "Dyktuj i oczyść",
@@ -2623,11 +2629,16 @@
       "offHint": "Wyłączony",
       "mode": {
         "hold": "Przytrzymaj, aby mówić",
-        "tap": "Stuknij, aby przełączyć"
+        "tap": "Stuknij, aby przełączyć",
+        "auto": "Przytrzymanie lub naciśnięcie"
       },
       "cancel": {
         "title": "Anuluj",
         "what": "Zatrzymaj nagrywanie albo czytaną na głos odpowiedź."
+      },
+      "pasteLast": {
+        "title": "Wklej ostatnią transkrypcję",
+        "what": "Wkleja ponownie ostatni podyktowany tekst tam, gdzie jest kursor."
       },
       "globe": {
         "hint": "macOS też reaguje na klawisz 🌐. Ustaw „Naciśnij klawisz 🌐, aby” na „Nic nie rób”, żeby służył tylko do dyktowania.",

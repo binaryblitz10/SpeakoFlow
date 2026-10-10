@@ -626,6 +626,10 @@
             "name": "Avbryt",
             "description": "Stoppar den pågående inspelningen eller ett svar som strömmas."
           },
+          "paste_last_transcript": {
+            "name": "Klistra in senaste transkriptionen",
+            "description": "Klistrar in ditt senaste dikterade igen där markören är."
+          },
           "transcribe_with_post_process": {
             "name": "Diktera och rensa",
             "description": "Diktera, och låt AI:n rensa upp texten innan den skrivs ut."
@@ -662,9 +666,10 @@
       },
       "pushToTalk": {
         "label": "Inspelningsbeteende",
-        "description": "Håll: inspelningen pågår medan du håller ned ett inspelningskortkommando. Tryck: en tryckning startar, nästa stoppar. Gäller alla inspelningskortkommandon.",
+        "description": "Håll: inspelningen pågår medan du håller ned ett inspelningskortkommando. Tryck: en tryckning startar, nästa stoppar. Håll eller tryck: håll ned för att prata, eller tryck en gång så fortsätter inspelningen tills du trycker igen. Gäller alla inspelningskortkommandon.",
         "hold": "Håll",
-        "tap": "Tryck"
+        "tap": "Tryck",
+        "auto": "Håll eller tryck"
       }
     },
     "models": {
@@ -2560,7 +2565,8 @@
         "hold": "Håll ned, prata, släpp. Dina ord skrivs där markören är.",
         "tap": "Tryck för att starta, prata, tryck för att stoppa. Dina ord skrivs där markören är.",
         "whatHold": "Håll ned, prata, släpp. Dina ord skrivs där markören är.",
-        "whatTap": "Tryck, prata, tryck igen. Dina ord skrivs där markören är."
+        "whatTap": "Tryck, prata, tryck igen. Dina ord skrivs där markören är.",
+        "whatAuto": "Håll ned, prata, släpp. Eller tryck en gång, prata och tryck igen för att stoppa. Dina ord skrivs där markören är."
       },
       "cleanup": {
         "title": "Diktera och rensa",
@@ -2581,11 +2587,16 @@
       "offHint": "Avstängt",
       "mode": {
         "hold": "Håll ned för att tala",
-        "tap": "Tryck för att växla"
+        "tap": "Tryck för att växla",
+        "auto": "Håll eller tryck"
       },
       "cancel": {
         "title": "Avbryt",
         "what": "Stoppa en inspelning eller ett svar som läses upp."
+      },
+      "pasteLast": {
+        "title": "Klistra in senaste transkriptionen",
+        "what": "Klistrar in ditt senaste dikterade igen där markören är."
       },
       "globe": {
         "hint": "macOS reagerar också på 🌐-tangenten. Ställ in ”Tryck på 🌐-tangenten för att” på ”Gör ingenting” så att den bara dikterar.",

@@ -626,6 +626,10 @@
             "name": "İptal",
             "description": "Mevcut kaydı veya akış hâlindeki yanıtı durdurur."
           },
+          "paste_last_transcript": {
+            "name": "Son dökümü yapıştır",
+            "description": "Son yaptığınız dikteyi imlecin olduğu yere yeniden yapıştırır."
+          },
           "transcribe_with_post_process": {
             "name": "Dikte et ve temizle",
             "description": "Dikte edin, ardından metin yazılmadan önce yapay zekâ onu temizler."
@@ -662,9 +666,10 @@
       },
       "pushToTalk": {
         "label": "Kayıt davranışı",
-        "description": "Basılı tut: bir kayıt kısayolunu basılı tuttuğunuz sürece kayıt devam eder. Dokun: bir basış başlatır, sonraki basış durdurur. Tüm kayıt kısayollarına uygulanır.",
+        "description": "Basılı tut: bir kayıt kısayolunu basılı tuttuğunuz sürece kayıt devam eder. Dokun: bir basış başlatır, sonraki basış durdurur. Basılı tut veya dokun: konuşmak için basılı tutun ya da bir kez dokunun; kayıt, yeniden dokunana kadar sürer. Tüm kayıt kısayollarına uygulanır.",
         "hold": "Basılı tut",
-        "tap": "Dokun"
+        "tap": "Dokun",
+        "auto": "Basılı tut veya dokun"
       }
     },
     "models": {
@@ -2560,7 +2565,8 @@
         "hold": "Basılı tutun, konuşun, bırakın. Sözleriniz imlecinizin olduğu yere yazılır.",
         "tap": "Başlatmak için dokunun, konuşun, durdurmak için dokunun. Sözleriniz imlecinizin olduğu yere yazılır.",
         "whatHold": "Basılı tutun, konuşun, bırakın. Sözleriniz imlecin olduğu yere yazılır.",
-        "whatTap": "Dokunun, konuşun, yeniden dokunun. Sözleriniz imlecin olduğu yere yazılır."
+        "whatTap": "Dokunun, konuşun, yeniden dokunun. Sözleriniz imlecin olduğu yere yazılır.",
+        "whatAuto": "Basılı tutun, konuşun, bırakın. Ya da bir kez dokunun, konuşun ve durdurmak için yeniden dokunun. Sözleriniz imlecin olduğu yere yazılır."
       },
       "cleanup": {
         "title": "Dikte et ve temizle",
@@ -2581,11 +2587,16 @@
       "offHint": "Kapalı",
       "mode": {
         "hold": "Konuşmak için basılı tut",
-        "tap": "Açıp kapatmak için dokun"
+        "tap": "Açıp kapatmak için dokun",
+        "auto": "Basılı tut veya dokun"
       },
       "cancel": {
         "title": "İptal",
         "what": "Bir kaydı ya da sesli okunan bir yanıtı durdurun."
+      },
+      "pasteLast": {
+        "title": "Son dökümü yapıştır",
+        "what": "Son yaptığınız dikteyi imlecin olduğu yere yeniden yapıştırır."
       },
       "globe": {
         "hint": "macOS da 🌐 tuşuna tepki verir. Yalnızca dikte etmesi için “🌐 tuşuna basınca” ayarını “Hiçbir Şey Yapma” yapın.",

@@ -628,6 +628,10 @@
             "name": "Cancelar",
             "description": "Detiene la grabación actual o una respuesta en curso."
           },
+          "paste_last_transcript": {
+            "name": "Pegar la última transcripción",
+            "description": "Vuelve a pegar tu último dictado donde está el cursor."
+          },
           "transcribe_with_post_process": {
             "name": "Dictar y limpiar",
             "description": "Dicta y limpia el texto con IA antes de que se escriba."
@@ -664,9 +668,10 @@
       },
       "pushToTalk": {
         "label": "Modo de grabación",
-        "description": "Mantener: se graba mientras mantienes pulsado un atajo de grabación. Tocar: una pulsación empieza y la siguiente detiene. Se aplica a todos los atajos de grabación.",
+        "description": "Mantener: se graba mientras mantienes pulsado un atajo de grabación. Tocar: una pulsación empieza y la siguiente detiene. Mantener o tocar: mantén pulsado para hablar, o toca una vez y la grabación sigue hasta que vuelvas a tocar. Se aplica a todos los atajos de grabación.",
         "hold": "Mantener presionado",
-        "tap": "Tocar"
+        "tap": "Tocar",
+        "auto": "Mantener o tocar"
       }
     },
     "models": {
@@ -2581,7 +2586,8 @@
         "hold": "Mantén pulsado, habla y suelta. Tus palabras se escriben donde está el cursor.",
         "tap": "Pulsa para empezar, habla y pulsa para parar. Tus palabras se escriben donde está el cursor.",
         "whatHold": "Mantén pulsado, habla y suelta. Tus palabras se escriben donde está el cursor.",
-        "whatTap": "Pulsa, habla y vuelve a pulsar. Tus palabras se escriben donde está el cursor."
+        "whatTap": "Pulsa, habla y vuelve a pulsar. Tus palabras se escriben donde está el cursor.",
+        "whatAuto": "Mantén pulsado, habla y suelta. O toca una vez, habla y toca de nuevo para detener. Tus palabras se escriben donde está el cursor."
       },
       "cleanup": {
         "title": "Dictar y limpiar",
@@ -2602,11 +2608,16 @@
       "offHint": "Desactivado",
       "mode": {
         "hold": "Mantén pulsado para hablar",
-        "tap": "Pulsa para activar o desactivar"
+        "tap": "Pulsa para activar o desactivar",
+        "auto": "Mantener o tocar"
       },
       "cancel": {
         "title": "Cancelar",
         "what": "Detén una grabación o una respuesta que se está leyendo en voz alta."
+      },
+      "pasteLast": {
+        "title": "Pegar la última transcripción",
+        "what": "Vuelve a pegar tu último dictado donde está el cursor."
       },
       "globe": {
         "hint": "macOS también usa la tecla 🌐. Ajusta «Pulsar la tecla 🌐 para» en «No hacer nada» para que solo dicte.",

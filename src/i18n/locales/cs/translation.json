@@ -630,6 +630,10 @@
             "name": "Zrušit",
             "description": "Zastaví aktuální nahrávání nebo právě generovanou odpověď."
           },
+          "paste_last_transcript": {
+            "name": "Vložit poslední přepis",
+            "description": "Znovu vloží vaši poslední diktovanou větu tam, kde je kurzor."
+          },
           "transcribe_with_post_process": {
             "name": "Diktovat a vyčistit",
             "description": "Diktujte, text pak před vypsáním vyčistí AI."
@@ -666,9 +670,10 @@
       },
       "pushToTalk": {
         "label": "Způsob nahrávání",
-        "description": "Podržení: nahrává se, dokud držíte zkratku pro nahrávání. Stisknutí: jeden stisk spustí, další zastaví. Platí pro všechny zkratky pro nahrávání.",
+        "description": "Podržení: nahrává se, dokud držíte zkratku pro nahrávání. Stisknutí: jeden stisk spustí, další zastaví. Podržení nebo stisknutí: podržte a mluvte, nebo stiskněte jednou a nahrávání běží, dokud nestisknete znovu. Platí pro všechny zkratky pro nahrávání.",
         "hold": "Podržení",
-        "tap": "Stisknutí"
+        "tap": "Stisknutí",
+        "auto": "Podržení nebo stisknutí"
       }
     },
     "models": {
@@ -2602,7 +2607,8 @@
         "hold": "Podržte, mluvte, pusťte. Vaše slova se napíšou tam, kde je kurzor.",
         "tap": "Stiskem spusťte, mluvte, stiskem zastavte. Vaše slova se napíšou tam, kde je kurzor.",
         "whatHold": "Podržte, mluvte, pusťte. Slova se napíšou tam, kde je kurzor.",
-        "whatTap": "Stiskněte, mluvte, stiskněte znovu. Slova se napíšou tam, kde je kurzor."
+        "whatTap": "Stiskněte, mluvte, stiskněte znovu. Slova se napíšou tam, kde je kurzor.",
+        "whatAuto": "Podržte, mluvte, pusťte. Nebo jednou stiskněte, mluvte a dalším stiskem zastavte. Slova se napíšou tam, kde je kurzor."
       },
       "cleanup": {
         "title": "Diktovat a vyčistit",
@@ -2623,11 +2629,16 @@
       "offHint": "Vypnuto",
       "mode": {
         "hold": "Podržte a mluvte",
-        "tap": "Stiskem zapnout/vypnout"
+        "tap": "Stiskem zapnout/vypnout",
+        "auto": "Podržení nebo stisknutí"
       },
       "cancel": {
         "title": "Zrušit",
         "what": "Zastaví nahrávání nebo předčítanou odpověď."
+      },
+      "pasteLast": {
+        "title": "Vložit poslední přepis",
+        "what": "Znovu vloží vaši poslední diktovanou větu tam, kde je kurzor."
       },
       "globe": {
         "hint": "macOS na klávesu 🌐 také reaguje. Nastavte „Stisknutím klávesy 🌐“ na „Nedělat nic“, aby sloužila jen k diktování.",

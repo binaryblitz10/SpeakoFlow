@@ -628,6 +628,10 @@
             "name": "Cancelar",
             "description": "Para a gravação atual ou uma resposta em andamento."
           },
+          "paste_last_transcript": {
+            "name": "Colar a última transcrição",
+            "description": "Cola novamente o seu último ditado onde está o cursor."
+          },
           "transcribe_with_post_process": {
             "name": "Ditar e limpar",
             "description": "Dite e a IA faz a limpeza antes de o texto ser digitado."
@@ -664,9 +668,10 @@
       },
       "pushToTalk": {
         "label": "Modo de gravação",
-        "description": "Segurar: grava enquanto você mantém um atalho de gravação pressionado. Tocar: um toque começa, o próximo para. Vale para todos os atalhos de gravação.",
+        "description": "Segurar: grava enquanto você mantém um atalho de gravação pressionado. Tocar: um toque começa, o próximo para. Segurar ou tocar: segure para falar, ou toque uma vez e a gravação continua até você tocar de novo. Vale para todos os atalhos de gravação.",
         "hold": "Segurar",
-        "tap": "Toque"
+        "tap": "Toque",
+        "auto": "Segurar ou tocar"
       }
     },
     "models": {
@@ -2581,7 +2586,8 @@
         "hold": "Segure, fale, solte. Suas palavras são digitadas onde está o cursor.",
         "tap": "Toque para começar, fale, toque para parar. Suas palavras são digitadas onde está o cursor.",
         "whatHold": "Segure, fale, solte. Suas palavras aparecem onde está o cursor.",
-        "whatTap": "Toque, fale, toque de novo. Suas palavras aparecem onde está o cursor."
+        "whatTap": "Toque, fale, toque de novo. Suas palavras aparecem onde está o cursor.",
+        "whatAuto": "Segure, fale, solte. Ou toque uma vez, fale e toque de novo para parar. Suas palavras aparecem onde está o cursor."
       },
       "cleanup": {
         "title": "Ditar e limpar",
@@ -2602,11 +2608,16 @@
       "offHint": "Desativado",
       "mode": {
         "hold": "Segure para falar",
-        "tap": "Toque para alternar"
+        "tap": "Toque para alternar",
+        "auto": "Segurar ou tocar"
       },
       "cancel": {
         "title": "Cancelar",
         "what": "Para uma gravação ou uma resposta sendo lida em voz alta."
+      },
+      "pasteLast": {
+        "title": "Colar a última transcrição",
+        "what": "Cola novamente o seu último ditado onde está o cursor."
       },
       "globe": {
         "hint": "O macOS também usa a tecla 🌐. Defina «Pressionar a tecla 🌐 para» como «Não fazer nada» para que ela só dite.",

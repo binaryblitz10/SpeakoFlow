@@ -628,6 +628,10 @@
             "name": "Annuler",
             "description": "Arrête l'enregistrement en cours ou une réponse en cours de génération."
           },
+          "paste_last_transcript": {
+            "name": "Coller la dernière transcription",
+            "description": "Recolle votre dernière dictée là où est votre curseur."
+          },
           "transcribe_with_post_process": {
             "name": "Dicter et nettoyer",
             "description": "Dictez, puis laissez l'IA nettoyer le texte avant qu'il ne soit écrit."
@@ -664,9 +668,10 @@
       },
       "pushToTalk": {
         "label": "Mode d'enregistrement",
-        "description": "Maintenir : l'enregistrement dure tant que vous maintenez un raccourci d'enregistrement. Appuyer : une pression lance l'enregistrement, la suivante l'arrête. S'applique à tous les raccourcis d'enregistrement.",
+        "description": "Maintenir : l'enregistrement dure tant que vous maintenez un raccourci d'enregistrement. Appuyer : une pression lance l'enregistrement, la suivante l'arrête. Maintenir ou appuyer : maintenez pour parler, ou appuyez une fois et l'enregistrement continue jusqu'à une nouvelle pression. S'applique à tous les raccourcis d'enregistrement.",
         "hold": "Maintenir",
-        "tap": "Appuyer"
+        "tap": "Appuyer",
+        "auto": "Maintenir ou appuyer"
       }
     },
     "models": {
@@ -2581,7 +2586,8 @@
         "hold": "Maintenez, parlez, relâchez. Vos mots s'écrivent là où se trouve votre curseur.",
         "tap": "Appuyez pour commencer, parlez, appuyez pour arrêter. Vos mots s'écrivent là où se trouve votre curseur.",
         "whatHold": "Maintenez, parlez, relâchez. Vos mots s'écrivent là où est votre curseur.",
-        "whatTap": "Appuyez, parlez, appuyez à nouveau. Vos mots s'écrivent là où est votre curseur."
+        "whatTap": "Appuyez, parlez, appuyez à nouveau. Vos mots s'écrivent là où est votre curseur.",
+        "whatAuto": "Maintenez, parlez, relâchez. Ou appuyez une fois, parlez, puis appuyez de nouveau pour arrêter. Vos mots s'écrivent là où est votre curseur."
       },
       "cleanup": {
         "title": "Dicter et nettoyer",
@@ -2602,11 +2608,16 @@
       "offHint": "Désactivé",
       "mode": {
         "hold": "Maintenir pour parler",
-        "tap": "Appuyer pour activer"
+        "tap": "Appuyer pour activer",
+        "auto": "Maintenir ou appuyer"
       },
       "cancel": {
         "title": "Annuler",
         "what": "Arrête un enregistrement ou une réponse en cours de lecture."
+      },
+      "pasteLast": {
+        "title": "Coller la dernière transcription",
+        "what": "Recolle votre dernière dictée là où est votre curseur."
       },
       "globe": {
         "hint": "macOS réagit aussi à la touche 🌐. Réglez « Appuyer sur la touche 🌐 pour » sur « Ne rien faire » pour qu’elle ne serve qu’à dicter.",

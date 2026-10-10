@@ -626,6 +626,10 @@
             "name": "Abbrechen",
             "description": "Stoppt die laufende Aufnahme oder eine gerade entstehende Antwort."
           },
+          "paste_last_transcript": {
+            "name": "Letztes Transkript einfügen",
+            "description": "Fügt dein letztes Diktat erneut dort ein, wo dein Cursor ist."
+          },
           "transcribe_with_post_process": {
             "name": "Diktieren und bereinigen",
             "description": "Diktieren und den Text mit KI bereinigen, bevor er geschrieben wird."
@@ -662,9 +666,10 @@
       },
       "pushToTalk": {
         "label": "Aufnahmeverhalten",
-        "description": "Halten: Die Aufnahme läuft, solange du ein Aufnahme-Tastenkürzel gedrückt hältst. Antippen: Ein Druck startet, der nächste stoppt. Gilt für alle Aufnahme-Tastenkürzel.",
+        "description": "Halten: Die Aufnahme läuft, solange du ein Aufnahme-Tastenkürzel gedrückt hältst. Antippen: Ein Druck startet, der nächste stoppt. Halten oder antippen: Zum Sprechen halten, oder einmal antippen – dann läuft die Aufnahme, bis du erneut antippst. Gilt für alle Aufnahme-Tastenkürzel.",
         "hold": "Halten",
-        "tap": "Antippen"
+        "tap": "Antippen",
+        "auto": "Halten oder antippen"
       }
     },
     "models": {
@@ -2560,7 +2565,8 @@
         "hold": "Halten, sprechen, loslassen. Deine Worte werden dort getippt, wo dein Cursor ist.",
         "tap": "Antippen zum Starten, sprechen, antippen zum Stoppen. Deine Worte werden dort getippt, wo dein Cursor ist.",
         "whatHold": "Halten, sprechen, loslassen. Deine Worte erscheinen dort, wo dein Cursor ist.",
-        "whatTap": "Antippen, sprechen, erneut antippen. Deine Worte erscheinen dort, wo dein Cursor ist."
+        "whatTap": "Antippen, sprechen, erneut antippen. Deine Worte erscheinen dort, wo dein Cursor ist.",
+        "whatAuto": "Halten, sprechen, loslassen. Oder einmal antippen, sprechen und zum Stoppen erneut antippen. Deine Worte erscheinen dort, wo dein Cursor ist."
       },
       "cleanup": {
         "title": "Diktieren und bereinigen",
@@ -2581,11 +2587,16 @@
       "offHint": "Ausgeschaltet",
       "mode": {
         "hold": "Zum Sprechen halten",
-        "tap": "Antippen zum Umschalten"
+        "tap": "Antippen zum Umschalten",
+        "auto": "Halten oder antippen"
       },
       "cancel": {
         "title": "Abbrechen",
         "what": "Beendet eine Aufnahme oder eine Antwort, die vorgelesen wird."
+      },
+      "pasteLast": {
+        "title": "Letztes Transkript einfügen",
+        "what": "Fügt dein letztes Diktat erneut dort ein, wo dein Cursor ist."
       },
       "globe": {
         "hint": "macOS reagiert ebenfalls auf die 🌐-Taste. Stelle „🌐-Taste drücken, um“ auf „Keine Aktion“, damit sie nur diktiert.",
